@@ -1,6 +1,6 @@
 # IFB398_Project
 
-## Team Member
+## Team Members
 - Cheng Liang - Developer
 - Allen George Jhon - Project manager
 - Xiheng Li - Developer
