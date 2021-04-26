@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D43C3BF22635C35200E53768 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43C3BF12635C35200E53768 /* MeViewController.swift */; };
-		D43C3BF52635C86B00E53768 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43C3BF42635C86B00E53768 /* CartViewController.swift */; };
+		D43C3BF52635C86B00E53768 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43C3BF42635C86B00E53768 /* ShopViewController.swift */; };
 		D43C3BF82635C88500E53768 /* ClubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43C3BF72635C88500E53768 /* ClubViewController.swift */; };
 		D43C3BFB2635C89100E53768 /* BlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43C3BFA2635C89100E53768 /* BlogViewController.swift */; };
 		D43C3BFE2635C89C00E53768 /* DesignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43C3BFD2635C89C00E53768 /* DesignViewController.swift */; };
@@ -22,7 +22,7 @@
 
 /* Begin PBXFileReference section */
 		D43C3BF12635C35200E53768 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
-		D43C3BF42635C86B00E53768 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		D43C3BF42635C86B00E53768 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		D43C3BF72635C88500E53768 /* ClubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubViewController.swift; sourceTree = "<group>"; };
 		D43C3BFA2635C89100E53768 /* BlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogViewController.swift; sourceTree = "<group>"; };
 		D43C3BFD2635C89C00E53768 /* DesignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 			children = (
 				D4E801C22624876D001C3CB0 /* HomeViewController.swift */,
 				D43C3BF12635C35200E53768 /* MeViewController.swift */,
-				D43C3BF42635C86B00E53768 /* CartViewController.swift */,
+				D43C3BF42635C86B00E53768 /* ShopViewController.swift */,
 				D43C3BF72635C88500E53768 /* ClubViewController.swift */,
 				D43C3BFA2635C89100E53768 /* BlogViewController.swift */,
 				D43C3BFD2635C89C00E53768 /* DesignViewController.swift */,
@@ -171,7 +171,7 @@
 				D4E801C32624876D001C3CB0 /* HomeViewController.swift in Sources */,
 				D4E801BF2624876D001C3CB0 /* AppDelegate.swift in Sources */,
 				D43C3BF82635C88500E53768 /* ClubViewController.swift in Sources */,
-				D43C3BF52635C86B00E53768 /* CartViewController.swift in Sources */,
+				D43C3BF52635C86B00E53768 /* ShopViewController.swift in Sources */,
 				D43C3BF22635C35200E53768 /* MeViewController.swift in Sources */,
 				D4E801C12624876D001C3CB0 /* SceneDelegate.swift in Sources */,
 				D43C3BFE2635C89C00E53768 /* DesignViewController.swift in Sources */,

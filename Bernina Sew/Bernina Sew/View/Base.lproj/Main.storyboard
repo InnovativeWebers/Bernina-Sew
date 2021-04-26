@@ -203,7 +203,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeB-P9-wjJ">
                                         <rect key="frame" x="216" y="0.0" width="62" height="26"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <state key="normal" title="Cart">
+                                        <state key="normal" title="Shop">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -249,12 +249,12 @@
                         <segue destination="aVr-id-QCW" kind="presentation" identifier="goToClub" id="DkF-K4-vY6"/>
                         <segue destination="Z1P-Pf-L9c" kind="presentation" identifier="goToDesign" id="eht-2a-Bay"/>
                         <segue destination="Sru-l4-jOQ" kind="presentation" identifier="goToBlog" id="ghh-IZ-Cie"/>
-                        <segue destination="eC4-jV-D6U" kind="presentation" identifier="goToCart" id="pfj-yW-Ux2"/>
+                        <segue destination="eC4-jV-D6U" kind="presentation" identifier="goToShop" id="pfj-yW-Ux2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135.38461538461539" y="127.96208530805687"/>
+            <point key="canvasLocation" x="175" y="128"/>
         </scene>
         <!--Me View Controller-->
         <scene sceneID="XGd-gG-Kun">
@@ -292,7 +292,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rVD-Aw-GcP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1082" y="128"/>
+            <point key="canvasLocation" x="1191" y="128"/>
         </scene>
         <!--Club View Controller-->
         <scene sceneID="7rH-5T-5qZ">
@@ -330,7 +330,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i6o-KF-Wo5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135" y="1061"/>
+            <point key="canvasLocation" x="174" y="832"/>
         </scene>
         <!--Design View Controller-->
         <scene sceneID="4du-bR-vJW">
@@ -368,7 +368,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F9P-Kn-ac2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1082" y="832"/>
+            <point key="canvasLocation" x="1192" y="832"/>
         </scene>
         <!--Blog View Controller-->
         <scene sceneID="3DY-71-cWV">
@@ -408,10 +408,10 @@
             </objects>
             <point key="canvasLocation" x="-889" y="832"/>
         </scene>
-        <!--cart View Controller-->
+        <!--Shop View Controller-->
         <scene sceneID="TcB-Ms-kxr">
             <objects>
-                <viewController id="eC4-jV-D6U" userLabel="cart View Controller" customClass="MeViewController" customModule="Bernina_Sew" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eC4-jV-D6U" userLabel="Shop View Controller" customClass="MeViewController" customModule="Bernina_Sew" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9hf-KQ-7C9">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
