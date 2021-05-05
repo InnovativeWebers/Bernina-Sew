@@ -1,5 +1,5 @@
 //
-//  MeViewController.swift
+//  SignUpViewController.swift
 //  Bernina Sew
 //
 //  Created by lunarian on 01/06/2020.
@@ -7,17 +7,17 @@
 
 import UIKit
 
-class MeViewController: UIViewController {
+class SignUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
 
-
-    @IBAction func donePressed(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
+    @IBAction func registerPressed(_ sender: UIButton) {
+        self.dismiss(animated: false, completion: nil)
     }
     /*
     // MARK: - Navigation

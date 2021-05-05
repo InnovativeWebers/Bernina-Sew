@@ -14,7 +14,9 @@ class ClubViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
+    @IBAction func donePressed(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

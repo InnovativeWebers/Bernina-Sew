@@ -29,17 +29,15 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var eventsTableView: UITableView!
     
-    @IBOutlet weak var homeButton: UIButton!
+    @IBOutlet weak var homeTabBar: UITabBarItem!
     
-    
-   
-    @IBAction func buttonPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "goTo\(sender.currentTitle!)", sender: self)
-    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
+
+
     }
     
 
