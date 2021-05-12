@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SignUpViewController: UIViewController {
 
@@ -15,18 +16,45 @@ class SignUpViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var reEnterPasswordTextField: UITextField!
+    @IBAction func showAlert(_ sender: Any) {
+        let alertController = UIAlertController(title: "Passwords don't match", message:
+            "Please enter again!", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .default))
 
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
     @IBAction func registerPressed(_ sender: UIButton) {
-        self.dismiss(animated: false, completion: nil)
-    }
-    /*
-    // MARK: - Navigation
+        
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        if let password = passwordTextField.text, let reEnter = reEnterPasswordTextField.text,
+           let email = emailTextField.text
+            {
+                if password != reEnter{
+                    showAlert(UIButton.self)
+                    
+                }else{
+                    Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+                      
+                    if let e = error{
+                            print(e)
+                            
+                    }else{
+                        self.performSegue(withIdentifier: "SignupToLogin", sender: self)
+                    }
+                
+                        
+                }
+            }
+        
 
+
+    }
+    
+
+}
 }
