@@ -253,6 +253,7 @@
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="0Hk-RQ-mlC"/>
                     <connections>
+                        <outlet property="avatarImage" destination="dq4-DS-mdu" id="q0J-3i-aKm"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="LoginToHome" modalPresentationStyle="fullScreen" id="iQS-zj-ys0"/>
                     </connections>
                 </viewController>
@@ -452,7 +453,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4p-4h-y2E">
-                                <rect key="frame" x="167" y="390" width="57" height="33"/>
+                                <rect key="frame" x="167" y="398" width="57" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
@@ -484,7 +485,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="LqV-1T-ubX"/>
+        <segue reference="Mjh-3H-dnD"/>
         <segue reference="iQS-zj-ys0"/>
     </inferredMetricsTieBreakers>
     <resources>

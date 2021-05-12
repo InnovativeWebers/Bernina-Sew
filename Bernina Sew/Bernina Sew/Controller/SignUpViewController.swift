@@ -10,48 +10,55 @@ import Firebase
 
 class SignUpViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+
     @IBOutlet weak var reEnterPasswordTextField: UITextField!
-    @IBAction func showAlert(_ sender: Any) {
-        let alertController = UIAlertController(title: "Passwords don't match", message:
-            "Please enter again!", preferredStyle: .alert)
+    
+    @IBAction func showAlert(_ sender: Any, _ title: String) {
+        let alertController = UIAlertController(title: title, message:
+            "Please try again!", preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "OK", style: .default))
 
         self.present(alertController, animated: true, completion: nil)
     }
     
-    @IBAction func registerPressed(_ sender: UIButton) {
-        
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
+ 
+    }
+    
+    
+    
+    @IBAction func registerPressed(_ sender: UIButton) {
+    
         if let password = passwordTextField.text, let reEnter = reEnterPasswordTextField.text,
            let email = emailTextField.text
             {
-                if password != reEnter{
-                    showAlert(UIButton.self)
+            
+                if password.count < 6 || reEnter.count < 6{
+                    showAlert(UIButton.self, "Password must contain at least 6 characters")
+                }
+                else if password != reEnter{
+                    showAlert(UIButton.self, "Passwords do not match!")
                     
                 }else{
                     Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                       
                     if let e = error{
-                            print(e)
+                        print(e.localizedDescription)
                             
                     }else{
+                        
                         self.performSegue(withIdentifier: "SignupToLogin", sender: self)
                     }
                 
                         
                 }
             }
-        
-
 
     }
     

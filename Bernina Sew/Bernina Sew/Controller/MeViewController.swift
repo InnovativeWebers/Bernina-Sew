@@ -8,17 +8,18 @@
 import UIKit
 
 class MeViewController: UIViewController {
+    @IBOutlet weak var avatarImage: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }
 
 
-    @IBAction func donePressed(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
-    }
+    
+
     /*
     // MARK: - Navigation
 
