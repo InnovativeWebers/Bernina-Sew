@@ -9,28 +9,6 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    @IBOutlet weak var searchBar: UISearchBar!
-    
-    @IBOutlet weak var featuredImage1: UIImageView!
-    
-    @IBOutlet weak var featuredImage2: UIImageView!
-    
-    @IBOutlet weak var featuredImage3: UIImageView!
-    
-    @IBOutlet weak var patternImage1: UIImageView!
-    
-    @IBOutlet weak var patternImage2: UIImageView!
-    
-    @IBOutlet weak var patternImage3: UIImageView!
-    
-    @IBOutlet weak var freaturedButton: UIButton!
-    
-    @IBOutlet weak var patternsButton: UIButton!
-    
-    @IBOutlet weak var eventsTableView: UITableView!
-    
-    @IBOutlet weak var homeTabBar: UITabBarItem!
-    
 
     
     override func viewDidLoad() {

@@ -1,5 +1,5 @@
 //
-//  MeViewController.swift
+//  ProfileViewController.swift
 //  Bernina Sew
 //
 //  Created by lunarian on 01/06/2020.
@@ -7,17 +7,13 @@
 
 import UIKit
 
-class MeViewController: UIViewController {
-    @IBOutlet weak var avatarImage: UIImageView!
+class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
 
         // Do any additional setup after loading the view.
     }
-
-
     
 
     /*

@@ -32,6 +32,9 @@ class SignUpViewController: UIViewController {
     }
     
     
+    @IBAction func backButtonPresses(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func registerPressed(_ sender: UIButton) {
     
@@ -48,9 +51,22 @@ class SignUpViewController: UIViewController {
                 }else{
                     Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                       
-                    if let e = error{
-                        print(e.localizedDescription)
+                        if error != nil{
                             
+                            if let errCode = AuthErrorCode(rawValue: error!._code){
+                                print(errCode.rawValue)
+                                switch errCode.rawValue{
+                                case 17008:
+                                    self.showAlert(UIButton.self, "Invalid email format")
+                                    break
+                                case 17007:
+                                    self.showAlert(UIButton.self, "You have already registered, please login")
+                                default:
+                                    break
+                                }
+                                    
+                            }
+
                     }else{
                         
                         self.performSegue(withIdentifier: "SignupToLogin", sender: self)
