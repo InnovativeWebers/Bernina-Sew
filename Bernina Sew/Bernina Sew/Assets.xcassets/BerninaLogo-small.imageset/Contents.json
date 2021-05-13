@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "home (2).png",
+      "filename" : "BerninaLogo-small.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "BerninaLogo-small@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "BerninaLogo-small@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

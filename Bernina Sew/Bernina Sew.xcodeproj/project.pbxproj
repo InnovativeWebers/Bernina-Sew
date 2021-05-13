@@ -14,7 +14,6 @@
 		D43C3BFB2635C89100E53768 /* BlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43C3BFA2635C89100E53768 /* BlogViewController.swift */; };
 		D43C3BFE2635C89C00E53768 /* DesignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43C3BFD2635C89C00E53768 /* DesignViewController.swift */; };
 		D451ECF0264BB51500A17A67 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D451ECEF264BB51500A17A67 /* GoogleService-Info.plist */; };
-		D451ECF7264CD67C00A17A67 /* Loginstatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D451ECF6264CD67C00A17A67 /* Loginstatus.swift */; };
 		D451ECFA264CDA6C00A17A67 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D451ECF9264CDA6C00A17A67 /* ProfileViewController.swift */; };
 		D47B710A263A752200B0B660 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47B7109263A752200B0B660 /* SignUpViewController.swift */; };
 		D4E801BF2624876D001C3CB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E801BE2624876D001C3CB0 /* AppDelegate.swift */; };
@@ -32,7 +31,6 @@
 		D43C3BFA2635C89100E53768 /* BlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogViewController.swift; sourceTree = "<group>"; };
 		D43C3BFD2635C89C00E53768 /* DesignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignViewController.swift; sourceTree = "<group>"; };
 		D451ECEF264BB51500A17A67 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
-		D451ECF6264CD67C00A17A67 /* Loginstatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loginstatus.swift; sourceTree = "<group>"; };
 		D451ECF9264CDA6C00A17A67 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D47B7109263A752200B0B660 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D4E801BB2624876D001C3CB0 /* Bernina Sew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bernina Sew.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,7 +92,6 @@
 		D451ECF8264CD6B300A17A67 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D451ECF6264CD67C00A17A67 /* Loginstatus.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -123,12 +120,12 @@
 			children = (
 				D4E801BE2624876D001C3CB0 /* AppDelegate.swift */,
 				D4E801C02624876D001C3CB0 /* SceneDelegate.swift */,
+				D451ECF8264CD6B300A17A67 /* Model */,
 				D43C3B9A2633BD3400E53768 /* Controller */,
 				D43C3B982633BD2800E53768 /* View */,
 				D4E801C72624876E001C3CB0 /* Assets.xcassets */,
 				D4E801C92624876E001C3CB0 /* LaunchScreen.storyboard */,
 				D4E801CC2624876E001C3CB0 /* Info.plist */,
-				D451ECF8264CD6B300A17A67 /* Model */,
 			);
 			path = "Bernina Sew";
 			sourceTree = "<group>";
@@ -267,7 +264,6 @@
 				D47B710A263A752200B0B660 /* SignUpViewController.swift in Sources */,
 				D43C3BFE2635C89C00E53768 /* DesignViewController.swift in Sources */,
 				D43C3BFB2635C89100E53768 /* BlogViewController.swift in Sources */,
-				D451ECF7264CD67C00A17A67 /* Loginstatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

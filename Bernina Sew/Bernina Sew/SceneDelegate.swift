@@ -6,12 +6,15 @@
 //
 
 import UIKit
+import Firebase
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
 
+    
+    
     func changeRootViewController(_ vc: UIViewController) {
         guard let window = self.window else {
             return
@@ -27,13 +30,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         
-        if LoggedIn.isLoggedIn {
+        if Auth.auth().currentUser != nil {
+          // User is signed in.
             let homeTabBarController = storyBoard.instantiateViewController(identifier: "HomeTabBarController")
             window?.rootViewController = homeTabBarController
-        }else{
+        } else {
+          // No user is signed in.
             let loginViewController  = storyBoard.instantiateViewController(identifier: "LoginView")
             window?.rootViewController = loginViewController
         }
+
+        
+    
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

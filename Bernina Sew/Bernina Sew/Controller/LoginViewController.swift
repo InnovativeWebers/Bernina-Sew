@@ -63,7 +63,7 @@ class LoginViewController: UIViewController {
                             
                     
                 }else{
-                    isLoggedIn = true
+
                     performSegue(withIdentifier: "LoginToHome", sender: self)
                     
                     (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate )?.changeRootViewController( homeTabBarController)
