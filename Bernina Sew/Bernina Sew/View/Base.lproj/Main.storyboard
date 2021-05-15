@@ -326,24 +326,34 @@
                     <view key="view" contentMode="scaleToFill" id="Vqi-J2-fRH">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vuE-qH-dOc">
+                                <rect key="frame" x="0.0" y="484" width="390" height="277"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="JGX-kE-SVT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="clL-3h-acV">
                         <imageReference key="image" image="house" catalog="system" symbolScale="medium" renderingMode="original"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="eventsTableView" destination="vuE-qH-dOc" id="iaG-DD-Lqj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ven-4H-Pch" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1983" y="-1404"/>
+            <point key="canvasLocation" x="-1983.0769230769231" y="-1404.0284360189573"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="3ed-Nt-hXT">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uvB-YC-26B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController storyboardIdentifier="HomeTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="tF7-kY-DFe" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ruU-oB-NFR">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -355,6 +365,7 @@
                         <segue destination="IBx-df-4oQ" kind="relationship" relationship="viewControllers" id="hDE-pP-NA4"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uvB-YC-26B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3378" y="493"/>
         </scene>

@@ -15,6 +15,9 @@
 		D43C3BFE2635C89C00E53768 /* DesignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43C3BFD2635C89C00E53768 /* DesignViewController.swift */; };
 		D451ECF0264BB51500A17A67 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D451ECEF264BB51500A17A67 /* GoogleService-Info.plist */; };
 		D451ECFA264CDA6C00A17A67 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D451ECF9264CDA6C00A17A67 /* ProfileViewController.swift */; };
+		D451ED0F264F8BAD00A17A67 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D451ED0D264F8BAD00A17A67 /* EventTableViewCell.swift */; };
+		D451ED10264F8BAD00A17A67 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D451ED0E264F8BAD00A17A67 /* EventTableViewCell.xib */; };
+		D451ED12264F8C3A00A17A67 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D451ED11264F8C3A00A17A67 /* Event.swift */; };
 		D47B710A263A752200B0B660 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47B7109263A752200B0B660 /* SignUpViewController.swift */; };
 		D4E801BF2624876D001C3CB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E801BE2624876D001C3CB0 /* AppDelegate.swift */; };
 		D4E801C12624876D001C3CB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E801C02624876D001C3CB0 /* SceneDelegate.swift */; };
@@ -32,6 +35,9 @@
 		D43C3BFD2635C89C00E53768 /* DesignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignViewController.swift; sourceTree = "<group>"; };
 		D451ECEF264BB51500A17A67 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D451ECF9264CDA6C00A17A67 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D451ED0D264F8BAD00A17A67 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		D451ED0E264F8BAD00A17A67 /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
+		D451ED11264F8C3A00A17A67 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		D47B7109263A752200B0B660 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D4E801BB2624876D001C3CB0 /* Bernina Sew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bernina Sew.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4E801BE2624876D001C3CB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				D4E801C42624876D001C3CB0 /* Main.storyboard */,
+				D451ED0D264F8BAD00A17A67 /* EventTableViewCell.swift */,
+				D451ED0E264F8BAD00A17A67 /* EventTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -92,6 +100,7 @@
 		D451ECF8264CD6B300A17A67 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D451ED11264F8C3A00A17A67 /* Event.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -198,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D451ED10264F8BAD00A17A67 /* EventTableViewCell.xib in Resources */,
 				D4E801CB2624876E001C3CB0 /* LaunchScreen.storyboard in Resources */,
 				D451ECF0264BB51500A17A67 /* GoogleService-Info.plist in Resources */,
 				D4E801C82624876E001C3CB0 /* Assets.xcassets in Resources */,
@@ -255,8 +265,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4E801C32624876D001C3CB0 /* HomeViewController.swift in Sources */,
+				D451ED0F264F8BAD00A17A67 /* EventTableViewCell.swift in Sources */,
 				D4E801BF2624876D001C3CB0 /* AppDelegate.swift in Sources */,
 				D43C3BF82635C88500E53768 /* ClubViewController.swift in Sources */,
+				D451ED12264F8C3A00A17A67 /* Event.swift in Sources */,
 				D43C3BF52635C86B00E53768 /* ShopViewController.swift in Sources */,
 				D43C3BF22635C35200E53768 /* LoginViewController.swift in Sources */,
 				D4E801C12624876D001C3CB0 /* SceneDelegate.swift in Sources */,
