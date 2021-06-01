@@ -1,5 +1,5 @@
 //
-//  CartViewController.swift
+//  DesignViewController.swift
 //  Bernina Sew
 //
 //  Created by lunarian on 01/06/2020.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-class ShopViewController: UIViewController {
+class DesignViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Design"
         // Do any additional setup after loading the view.
     }
     

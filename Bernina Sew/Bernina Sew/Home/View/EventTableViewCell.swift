@@ -9,7 +9,7 @@ import UIKit
 
 class EventTableViewCell: UITableViewCell {
     @IBOutlet weak var eventsLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var levelLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

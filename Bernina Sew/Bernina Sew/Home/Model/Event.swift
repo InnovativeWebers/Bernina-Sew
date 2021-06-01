@@ -9,5 +9,6 @@ import Foundation
 
 struct Event{
     let eventMessage : String
+    let level: String
 
 }

@@ -72,35 +72,199 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D43C3B982633BD2800E53768 /* View */ = {
+		D4C92C552666931F00E3AE2D /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				D4E801C42624876D001C3CB0 /* Main.storyboard */,
+				D4C92C562666932700E3AE2D /* Model */,
+				D4C92C572666932D00E3AE2D /* View */,
+				D4C92C582666933300E3AE2D /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D4C92C562666932700E3AE2D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D451ED11264F8C3A00A17A67 /* Event.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D4C92C572666932D00E3AE2D /* View */ = {
+			isa = PBXGroup;
+			children = (
 				D451ED0D264F8BAD00A17A67 /* EventTableViewCell.swift */,
 				D451ED0E264F8BAD00A17A67 /* EventTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		D43C3B9A2633BD3400E53768 /* Controller */ = {
+		D4C92C582666933300E3AE2D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				D4E801C22624876D001C3CB0 /* HomeViewController.swift */,
-				D43C3BF12635C35200E53768 /* LoginViewController.swift */,
-				D43C3BF42635C86B00E53768 /* ShopViewController.swift */,
-				D43C3BF72635C88500E53768 /* ClubViewController.swift */,
-				D43C3BFA2635C89100E53768 /* BlogViewController.swift */,
-				D43C3BFD2635C89C00E53768 /* DesignViewController.swift */,
-				D47B7109263A752200B0B660 /* SignUpViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D4C92C592666936600E3AE2D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D4C92C5C2666938700E3AE2D /* Model */,
+				D4C92C5B2666938300E3AE2D /* View */,
+				D4C92C5A2666937900E3AE2D /* Controller */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		D4C92C5A2666937900E3AE2D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				D451ECF9264CDA6C00A17A67 /* ProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		D451ECF8264CD6B300A17A67 /* Model */ = {
+		D4C92C5B2666938300E3AE2D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D451ED11264F8C3A00A17A67 /* Event.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D4C92C5C2666938700E3AE2D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D4C92C5D2666943700E3AE2D /* Member */ = {
+			isa = PBXGroup;
+			children = (
+				D4C92C602666944D00E3AE2D /* Model */,
+				D4C92C5F2666944600E3AE2D /* View */,
+				D4C92C5E2666944000E3AE2D /* Controller */,
+			);
+			path = Member;
+			sourceTree = "<group>";
+		};
+		D4C92C5E2666944000E3AE2D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D43C3BF72635C88500E53768 /* ClubViewController.swift */,
+				D43C3BFA2635C89100E53768 /* BlogViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D4C92C5F2666944600E3AE2D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D4C92C602666944D00E3AE2D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D4C92C612666946700E3AE2D /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				D4C92C642666947D00E3AE2D /* Model */,
+				D4C92C632666947700E3AE2D /* View */,
+				D4C92C622666947100E3AE2D /* Controller */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		D4C92C622666947100E3AE2D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D43C3BF42635C86B00E53768 /* ShopViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D4C92C632666947700E3AE2D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D4C92C642666947D00E3AE2D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D4C92C652666948C00E3AE2D /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				D4C92C68266694A000E3AE2D /* Model */,
+				D4C92C672666949900E3AE2D /* View */,
+				D4C92C662666949300E3AE2D /* Controller */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		D4C92C662666949300E3AE2D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D43C3BFD2635C89C00E53768 /* DesignViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D4C92C672666949900E3AE2D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D4C92C68266694A000E3AE2D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D4C92C69266694B800E3AE2D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D4C92C6C266694D500E3AE2D /* Model */,
+				D4C92C6B266694CF00E3AE2D /* View */,
+				D4C92C6A266694C700E3AE2D /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D4C92C6A266694C700E3AE2D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D43C3BF12635C35200E53768 /* LoginViewController.swift */,
+				D47B7109263A752200B0B660 /* SignUpViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D4C92C6B266694CF00E3AE2D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D4C92C6C266694D500E3AE2D /* Model */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -127,11 +291,15 @@
 		D4E801BD2624876D001C3CB0 /* Bernina Sew */ = {
 			isa = PBXGroup;
 			children = (
+				D4C92C69266694B800E3AE2D /* Login */,
+				D4C92C652666948C00E3AE2D /* Design */,
+				D4C92C612666946700E3AE2D /* Shop */,
+				D4C92C5D2666943700E3AE2D /* Member */,
+				D4C92C552666931F00E3AE2D /* Home */,
+				D4C92C592666936600E3AE2D /* Profile */,
 				D4E801BE2624876D001C3CB0 /* AppDelegate.swift */,
 				D4E801C02624876D001C3CB0 /* SceneDelegate.swift */,
-				D451ECF8264CD6B300A17A67 /* Model */,
-				D43C3B9A2633BD3400E53768 /* Controller */,
-				D43C3B982633BD2800E53768 /* View */,
+				D4E801C42624876D001C3CB0 /* Main.storyboard */,
 				D4E801C72624876E001C3CB0 /* Assets.xcassets */,
 				D4E801C92624876E001C3CB0 /* LaunchScreen.storyboard */,
 				D4E801CC2624876E001C3CB0 /* Info.plist */,

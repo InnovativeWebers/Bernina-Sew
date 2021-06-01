@@ -16,6 +16,7 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var passwordTextField: UITextField!
 
+    @IBOutlet weak var loginButton: UIButton!
     
     @IBAction func showAlert(_ sender: Any, _ title: String) {
         let alertController = UIAlertController(title: title, message:
@@ -28,11 +29,20 @@ class LoginViewController: UIViewController {
 
     
     
-    var isLoggedIn = false
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        loginButton.layer.cornerRadius = 10
+        loginButton.backgroundColor = #colorLiteral(red: 0, green: 0.7176470588, blue: 0.7607843137, alpha: 1)
+        
+        emailTextField.layer.borderWidth = 1.0
+        emailTextField.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        emailTextField.layer.cornerRadius = 10
+        
+        passwordTextField.layer.borderWidth = 1.0
+        passwordTextField.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        passwordTextField.layer.cornerRadius = 10
 
         
     }

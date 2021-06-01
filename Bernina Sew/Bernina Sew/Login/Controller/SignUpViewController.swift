@@ -14,7 +14,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-
+    @IBOutlet weak var registerButton: UIButton!
     @IBOutlet weak var reEnterPasswordTextField: UITextField!
     
     @IBAction func showAlert(_ sender: Any, _ title: String) {
@@ -25,9 +25,26 @@ class SignUpViewController: UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        emailTextField.layer.borderWidth = 1.0
+        emailTextField.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        emailTextField.layer.cornerRadius = 10
+        
+        passwordTextField.layer.borderWidth = 1.0
+        passwordTextField.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        passwordTextField.layer.cornerRadius = 10
+        
+        reEnterPasswordTextField.layer.borderWidth = 1.0
+        reEnterPasswordTextField.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        reEnterPasswordTextField.layer.cornerRadius = 10
+        
+        registerButton.layer.cornerRadius = 10
+        registerButton.backgroundColor = #colorLiteral(red: 0.9137254902, green: 0.2705882353, blue: 0.3764705882, alpha: 1)
+        
  
     }
     

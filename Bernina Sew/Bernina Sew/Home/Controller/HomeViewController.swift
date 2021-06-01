@@ -13,20 +13,18 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var eventsTableView: UITableView!
     
     let events : [Event] = [
-        Event(eventMessage: "L1 Workhsop"),
-        Event(eventMessage: "L2 Workhsop"),
-        Event(eventMessage: "L3 Workhsop"),
-        Event(eventMessage: "L4 Workhsop"),
-        Event(eventMessage: "L5 Workhsop"),
-        Event(eventMessage: "L6 Workhsop")
+        Event(eventMessage: "L1 Workhsop", level: "Beginner"),
+        Event(eventMessage: "L2 Workhsop", level: "Intermediate"),
+        Event(eventMessage: "L3 Workhsop", level: "Hard"),
     ]
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         eventsTableView.dataSource = self
-    
         eventsTableView.register(UINib(nibName: "EventTableViewCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
+        
+        self.title = "Home"
 
     }
     
@@ -44,6 +42,7 @@ extension HomeViewController : UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath) as! EventTableViewCell
         
         cell.eventsLabel.text = events[indexPath.row].eventMessage
+        cell.levelLabel.text = events[indexPath.row].level
         
         return cell
     }

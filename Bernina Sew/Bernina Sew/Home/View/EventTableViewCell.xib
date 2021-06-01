@@ -83,8 +83,8 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="dateLabel" destination="Cay-fP-cjc" id="FPy-dZ-yBV"/>
                 <outlet property="eventsLabel" destination="d9R-gf-w2V" id="mx8-cJ-hzh"/>
+                <outlet property="levelLabel" destination="Cay-fP-cjc" id="FPy-dZ-yBV"/>
             </connections>
             <point key="canvasLocation" x="56.521739130434788" y="107.8125"/>
         </tableViewCell>

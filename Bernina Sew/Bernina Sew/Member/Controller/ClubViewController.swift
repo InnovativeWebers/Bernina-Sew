@@ -11,11 +11,13 @@ class ClubViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Club"
 
         // Do any additional setup after loading the view.
     }
     @IBAction func donePressed(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
+
     }
 
     /*
