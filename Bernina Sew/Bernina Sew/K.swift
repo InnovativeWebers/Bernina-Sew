@@ -8,5 +8,7 @@
 import UIKit
 
 struct K {
-    static let symbolConfig = UIImage.SymbolConfiguration(scale: .small)
+    static let symbolConfig = UIImage.SymbolConfiguration(scale: .medium)
+    static let brandRed = #colorLiteral(red: 0.7568627451, green: 0, blue: 0, alpha: 1)
+    static let brandGrey = #colorLiteral(red: 0.4, green: 0.4, blue: 0.4, alpha: 1)
 }

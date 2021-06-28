@@ -12,6 +12,8 @@ class ShopViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Shop"
+        let imageIcon = UIImage(systemName: "cart.fill", withConfiguration: K.symbolConfig)?.withTintColor(K.brandRed, renderingMode: .alwaysOriginal)
+        self.tabBarController?.tabBar.items![3].selectedImage = imageIcon
         // Do any additional setup after loading the view.
     }
     

@@ -12,6 +12,9 @@ class DesignViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Design"
+        
+        let imageIcon = UIImage(systemName: "paintpalette.fill", withConfiguration: K.symbolConfig)?.withTintColor(K.brandRed, renderingMode: .alwaysOriginal)
+        self.tabBarController?.tabBar.items![2].selectedImage = imageIcon
         // Do any additional setup after loading the view.
     }
     

@@ -12,7 +12,12 @@ class BlogViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Member"
+        
+        let imageIcon = UIImage(systemName: "person.and.person.fill", withConfiguration: K.symbolConfig)?.withTintColor(K.brandRed, renderingMode: .alwaysOriginal)
+        self.tabBarController?.tabBar.items![1].selectedImage = imageIcon
         // Do any additional setup after loading the view.
+        
+
     }
     
 

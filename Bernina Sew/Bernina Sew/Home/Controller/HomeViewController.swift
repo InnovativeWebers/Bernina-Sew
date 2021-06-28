@@ -27,10 +27,12 @@ class HomeViewController: UIViewController {
         eventsTableView.register(UINib(nibName: "EventTableViewCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
         
         self.title = "Home"
+        
+        let imageIcon = UIImage(systemName: "house.fill", withConfiguration: K.symbolConfig)?.withTintColor(K.brandRed, renderingMode: .alwaysOriginal)
+        self.tabBarController?.tabBar.items![0].selectedImage = imageIcon
+        
 
     }
-    
-
 }
 
 

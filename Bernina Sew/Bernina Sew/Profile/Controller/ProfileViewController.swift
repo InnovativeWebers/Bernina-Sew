@@ -16,7 +16,8 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         self.title = "Profile"
 
-        // Do any additional setup after loading the view.
+        let imageIcon = UIImage(systemName: "face.smiling.fill", withConfiguration: K.symbolConfig)?.withTintColor(K.brandRed, renderingMode: .alwaysOriginal)
+        self.tabBarController?.tabBar.items![4].selectedImage = imageIcon
     }
     
 
