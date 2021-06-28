@@ -8,7 +8,8 @@
 import Foundation
 
 struct Event{
-    let eventMessage : String
-    let level: String
+    var eventName: String
+    var level: String
+    var date: String
 
 }

@@ -53,11 +53,13 @@ class LoginViewController: UIViewController {
         let homeTabBarController = storyboard.instantiateViewController(identifier: "HomeTabBarController")
         
         if let email = emailTextField.text, let password = passwordTextField.text{
+            
+            // get the login status
             Auth.auth().signIn(withEmail: email, password: password) { [self] authResult, error in
               
-                
+                let color = #colorLiteral(red: 1, green: 0.9999999404, blue: 0.9999999404, alpha: 0.8470588235)
+                // handle user inputs when there is an error
                 if error != nil{
-                    
                     if let errCode = AuthErrorCode(rawValue: error!._code){
                         print(errCode.rawValue)
                         switch errCode.rawValue{
@@ -65,26 +67,20 @@ class LoginViewController: UIViewController {
                             self.showAlert(UIButton.self, "Invalid email format")
                             break
                         case 17011:
-                            self.showAlert(UIButton.self, "Account not registered, please register first.")
+                            self.showAlert(UIButton.self, "Account not registered")
+                        case 17009:
+                            self.showAlert(UIButton.self, "Incorrect password")
                         default:
                             break
                         }
                     }
-                            
-                    
                 }else{
-
+                    
+                    // transit to home screen when there is no error
                     performSegue(withIdentifier: "LoginToHome", sender: self)
-                    
                     (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate )?.changeRootViewController( homeTabBarController)
-                    
                 }
-                
-              
-
-                
             }
-            
         }
     }
 

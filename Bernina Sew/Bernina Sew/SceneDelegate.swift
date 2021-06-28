@@ -12,9 +12,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
-    
-    
     func changeRootViewController(_ vc: UIViewController) {
         guard let window = self.window else {
             return
