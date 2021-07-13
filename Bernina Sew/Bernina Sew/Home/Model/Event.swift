@@ -11,5 +11,4 @@ struct Event{
     var eventName: String
     var level: String
     var date: String
-
 }

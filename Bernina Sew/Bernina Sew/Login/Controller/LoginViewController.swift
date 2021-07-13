@@ -57,7 +57,6 @@ class LoginViewController: UIViewController {
             // get the login status
             Auth.auth().signIn(withEmail: email, password: password) { [self] authResult, error in
               
-                let color = #colorLiteral(red: 1, green: 0.9999999404, blue: 0.9999999404, alpha: 0.8470588235)
                 // handle user inputs when there is an error
                 if error != nil{
                     if let errCode = AuthErrorCode(rawValue: error!._code){
